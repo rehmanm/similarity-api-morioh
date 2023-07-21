@@ -2,12 +2,13 @@
 import React, {FC, useState} from "react";
 import {Button} from "@/ui/Button";
 import {signIn} from "next-auth/react";
+import {toast} from "./Toast";
 
 interface SignInButtonProps {}
 
 const SignInButton: FC<SignInButtonProps> = ({}) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const toast = ({}) => {};
+
   const signInWithGoogle = async () => {
     setIsLoading(true);
 

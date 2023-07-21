@@ -9,7 +9,7 @@ import {
 } from "@/ui/DropDownMenu";
 
 import {Button} from "@/ui/Button";
-import Icons from "@/ui/Icons";
+import Icons from "@/components/Icons";
 
 interface ThemeToggleProps {}
 const ThemeToggle: FC<ThemeToggleProps> = ({}) => {

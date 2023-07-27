@@ -15,6 +15,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           <Navbar />
           {children}
           <Toaster position="bottom-right" />
+          {/* @ts-expect-error Server Component */}
         </Providers>
         <div className="h-40 md:hidden"></div>
       </body>
